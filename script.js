@@ -16,7 +16,12 @@ let winMsg = 'Congrats, you have won! Refresh this page to start over.'
 main();
 generate();
 
-document.addEventListener("keydown", direction)
+document.addEventListener("keydown", direction);
+
+function restart()
+{
+    document.getElementById("restart").innerHTML = window.location.reload();
+}
 
 function main() 
 {

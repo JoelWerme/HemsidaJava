@@ -40,6 +40,12 @@ main {
   align-items: center;
 }
 
+#restart {
+  margin-top: 20px;
+  padding: 2px;
+  font-size: 20px;
+}
+
 #board {
   width: 500px;
   height: 500px;
