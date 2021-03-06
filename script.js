@@ -11,7 +11,7 @@ let vertical = 0;
 let foodX;
 let foodY;
 let gameOverMsg = 'Game Over.';
-let winMsg = 'Congrats, you have won!'
+let winMsg = 'Congrats, you have won!';
 
 main();
 generate();
