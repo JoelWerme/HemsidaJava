@@ -10,8 +10,8 @@ let horizontal = 25;
 let vertical = 0;
 let foodX;
 let foodY;
-let gameOverMsg = 'Game Over. Refresh this page to start over.';
-let winMsg = 'Congrats, you have won! Refresh this page to start over.'
+let gameOverMsg = 'Game Over.';
+let winMsg = 'Congrats, you have won!'
 
 main();
 generate();
