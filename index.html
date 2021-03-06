@@ -9,13 +9,14 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header>Halloj</header>
+    <header>
+        Snake
+        <p>Score: <p>
+        <div id="score">0</div>
+        <p id="gameOver"></p>
+    </header>
     <main>
-      <div id="score">
-        <input type="text" id="number" value="0" />
-        <input type="button" onclick="changeScore()" value="klicka" />
-      </div>
-      <canvas id="board"> </canvas>
+      <canvas id="board" width="400" height="400"></canvas>
     </main>
   </body>
 </html>
