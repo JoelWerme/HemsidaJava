@@ -10,7 +10,8 @@ let horizontal = 25;
 let vertical = 0;
 let foodX;
 let foodY;
-let gameOverMsg = 'Refresh this page to start over';
+let gameOverMsg = 'Refresh this page to start over.';
+let winMsg = 'Congrats, you have won!'
 
 main();
 generate();
@@ -20,6 +21,7 @@ document.addEventListener("keydown", direction)
 function main() 
 {
     if(gameOver()) return document.getElementById("gameOver").innerHTML = gameOverMsg;
+    if (score == 255) return document.getElementById("win").innerHTML = winMsg + gameOverMsg;
     setTimeout(function onTick() 
    {    
      clearCanvas();
@@ -46,7 +48,7 @@ function drawSnake()
 
 function clearCanvas() 
 {
-    gameBoard_ctx.fillStyle = 'lightblue';
+    gameBoard_ctx.fillStyle = '#87CEEB';
     gameBoard_ctx.strokestyle = 'black';
     gameBoard_ctx.fillRect(0, 0, gameBoard.width, gameBoard.height);
     gameBoard_ctx.strokeRect(0, 0, gameBoard.width, gameBoard.height);

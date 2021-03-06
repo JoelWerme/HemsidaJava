@@ -10,18 +10,26 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 9fr;
-  grid-template-columns: 1fr 75% 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 50% 1fr;
   background-image: url(8bit.jpg);
   background-position: -50px;
 }
 
-header{
+header {
   padding-top: 10px;
   margin: 25px;
   grid-column: 2/3;
   text-align: center;
   font-size: 50px;
+}
+
+article {
+  margin: 20px;
+  text-align: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-size: 30px;
 }
 
 main {
